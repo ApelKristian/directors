@@ -25,6 +25,7 @@ sudo apt install --no-install-recommends r-cran-tidyverse -y
 
 sudo R -e 'install.packages("httr2")'
 sudo R -e 'install.packages("lubridate")'
+sudo R -e 'install.packages("urltools")'
 
 #create directories
 cd ~
