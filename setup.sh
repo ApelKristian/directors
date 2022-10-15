@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #call this comment on the VPS:
-# wget -O - https://raw.githubusercontent.com/ApelKristian/workers/main/setup.sh | bash
+# wget -O - https://raw.githubusercontent.com/ApelKristian/directors/main/setup.sh | bash
 
 #wait for all processes to finish
 tail --pid=$pid -f /dev/null
