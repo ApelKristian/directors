@@ -29,4 +29,5 @@ sudo R -e 'install.packages("urltools")'
 
 #create directories
 cd ~
-mkdir -p ~/Documents/{tasks,scripts}/data
+mkdir -p ~/Documents/{tasks,scripts,results}
+mkdir -p ~/Documents/results/{webpages,log}
