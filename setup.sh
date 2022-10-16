@@ -23,13 +23,14 @@ sudo apt install --no-install-recommends r-base -y
 sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
 sudo apt install --no-install-recommends r-cran-tidyverse -y
 
+#install RStudio Server
+sudo apt-get install gdebi-core -y
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.2-576-amd64.deb
+sudo gdebi rstudio-server-2022.07.2-576-amd64.deb
+
 sudo R -e 'install.packages("httr2")'
 sudo R -e 'install.packages("lubridate")'
 sudo R -e 'install.packages("urltools")'
 sudo R -e 'install.packages("cronR")'
 
-
-#create directories
-cd ~
-mkdir -p ~/Documents/{tasks,scripts,results}
-mkdir -p ~/Documents/results/{webpages,log}
+#go manual from here
