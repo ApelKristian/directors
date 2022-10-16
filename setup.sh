@@ -28,6 +28,10 @@ sudo apt-get install gdebi-core -y
 wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.2-576-amd64.deb
 sudo gdebi rstudio-server-2022.07.2-576-amd64.deb
 
+#add user for Rstudio Server
+adduser defuser
+usermod -aG sudo defuser
+
 sudo R -e 'install.packages("httr2")'
 sudo R -e 'install.packages("lubridate")'
 sudo R -e 'install.packages("urltools")'
