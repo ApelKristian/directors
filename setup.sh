@@ -20,9 +20,7 @@ sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_
 sudo apt install --no-install-recommends r-base -y
 
 #install R packages
-sudo add-apt-repository ppa:c2d4u.team/c2d4u4.0+
-sudo apt install --no-install-recommends r-cran-tidyverse -y
-
+sudo R -e 'install.packages("tidyverse")'
 sudo R -e 'install.packages("httr2")'
 sudo R -e 'install.packages("lubridate")'
 sudo R -e 'install.packages("urltools")'
@@ -57,7 +55,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 sudo groupadd docker
 sudo usermod -aG docker defuser
-
 
 
 #go manual from here
