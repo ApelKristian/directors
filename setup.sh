@@ -28,8 +28,8 @@ sudo R -e 'install.packages("cronR")'
 
 #install RStudio Server
 sudo apt-get install gdebi-core -y
-wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.2-576-amd64.deb
-sudo gdebi rstudio-server-2022.07.2-576-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.12.0-353-amd64.deb
+sudo gdebi rstudio-server-2022.12.0-353-amd64.deb
 
 #add user for Rstudio Server
 adduser defuser
